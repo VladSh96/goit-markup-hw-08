@@ -1,0 +1,34 @@
+.clients__title{
+    @extend %sections-title;
+}
+.clients__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clients__icon{
+    width: 160px;
+    height: 60px;
+}
+.clients__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    fill: #AFB1B8;
+    transition: fill $animation, border-color $animation;
+
+    &:hover,
+    &:focus{
+        border-color: $accent-color;
+        fill: $accent-color;
+    }
+}
+.clients__item{
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
