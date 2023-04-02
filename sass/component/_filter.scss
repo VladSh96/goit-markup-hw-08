@@ -1,0 +1,23 @@
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-bottom: 50px;
+    @media screen and (min-width:768px) {
+        justify-content: center;
+    }
+}
+.filter__item:not(:nth-last-child(2)){
+    @media screen and (max-width:767px) {
+        margin-bottom: 8px;
+    }
+}
+.filter__item:not(:last-child) {
+    margin-right: 8px;
+    
+}
+
+.filter__button{
+    @extend %btn;
+    @extend %btn-secondary;
+}

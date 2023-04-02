@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
+    <title>WebStudio</title>   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -19,13 +17,50 @@
     <header class="header">
         <div class="container header__container">
             <a href="./index.html" class="logo link header__logo">Web<span class="logo__text--black">Studio</span></a>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40px" height="40px">
+                    <use href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button button class="menu-toggle menu-toggle__position js-close-menu">
+                    <svg width="40px" height="40px">
+                        <use href="./images/icons.svg#cross"></use>
+                    </svg>
+                </button>
+                <nav class="menu__navigation">
+                    <ul class="menu__list list">
+                        <li class="menu__item">
+                            <a href="./index.html" class="link menu__link ">Студія</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./portfolio.html" class="link menu__link">Портфоліо</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contact" class="link menu__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="mobile-contact list">
+                    <li class="mobile-contact__item"><a href="tel:+380961111111" class="mobile-contact__tel link">
+                            +38 096 111 11 11</a> </li>
+                    <li class="mobile-contact__item"><a href="mailto:info@devstudio.com" class="mobile-contact__mail link">
+                        info@devstudio.com</a> </li>
+                </ul>
+                <ul class="menu__social list ">
+                    <li class="link menu__name">Instagram</li>
+                    <li class="link menu__name">Twitter</li>
+                    <li class="link menu__name">Facebook</li>
+                    <li class="link menu__name">LinkedIn</li>
+                </ul>
+            </div>
             <nav class="navigation">
                 <ul class="navigation__list list">
                     <li class="navigation__item">
-                        <a href="./index.html" class="link navigation__link">Студія</a>
+                        <a href="./index.html" class="link navigation__link navigation__link--active">Студія</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="./portfolio.html" class="link navigation__link navigation__link--active">Портфоліо</a>
+                        <a href="./portfolio.html" class="link navigation__link">Портфоліо</a>
                     </li>
                     <li class="navigation__item">
                         <a href="#contact" class="link navigation__link">Контакти</a>
@@ -44,7 +79,7 @@
                         </svg>
                         +38 096 111 11 11</a> </li>
             </ul>
-        </div>
+    </div>
     </header>
 
 <main>
@@ -72,7 +107,7 @@
                 <li class="card-set__item">
                     <a href="#" class="card-set__link">
                         <div class="card-set__wrap">
-                            <img class="card-set__img" src="./images/techno.jpg" alt="Ноутбук з відкритим сайтом" width="370">
+                            <img class="card-set__img" src="./images/techno.jpg" alt="Ноутбук з відкритим сайтом" >
                             <div class="card-set__overlay">
                                 <p class="card-set__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -87,7 +122,7 @@
                 <li class="card-set__item">
                     <a href="" class="card-set__link">
                         <div class="card-set__wrap">
-                        <img class="card-set__img" src="./images/poster.jpg" alt="два баскетболіста" width="370">
+                        <img class="card-set__img" src="./images/poster.jpg" alt="два баскетболіста" >
                             <div class="card-set__overlay">
                                 <p class="card-set__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
@@ -103,7 +138,7 @@
                 <li class="card-set__item">
                     <a href="" class="card-set__link">
                         <div class="card-set__wrap">
-                            <img class="card-set__img" src="./images/seafood.jpg" alt="реклама ресторана" width="370">
+                            <img class="card-set__img" src="./images/seafood.jpg" alt="реклама ресторана">
                             <div class="card-set__overlay">
                                 <p class="card-set__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
@@ -119,7 +154,7 @@
                 <li class="card-set__item">
                     <a href="" class="card-set__link">
                         <div class="card-set__wrap">
-                            <img class="card-set__img" src="./images/prime.jpg" alt="навушники" width="370">
+                            <img class="card-set__img" src="./images/prime.jpg" alt="навушники">
                             <div class="card-set__overlay">
                                 <p class="card-set__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
@@ -135,7 +170,7 @@
                 <li class="card-set__item">
                     <a href="" class="card-set__link">
                         <div class="card-set__wrap">
-                            <img class="card-set__img" src="./images/boxes.jpg" alt="коробки доставки" width="370">
+                            <img class="card-set__img" src="./images/boxes.jpg" alt="коробки доставки">
                             <div class="card-set__overlay">
                                 <p class="card-set__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
@@ -151,7 +186,7 @@
                 <li class="card-set__item">
                     <a href="" class="card-set__link">
                         <div class="card-set__wrap">
-                            <img class="card-set__img" src="./images/noborders.jpg" alt="imac з відкритим сайтом" width="370">
+                            <img class="card-set__img" src="./images/noborders.jpg" alt="imac з відкритим сайтом">
                             <div class="card-set__overlay">
                                 <p class="card-set__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
@@ -167,7 +202,7 @@
                 <li class="card-set__item">
                     <a href="" class="card-set__link">
                         <div class="card-set__wrap">
-                            <img class="card-set__img" src="./images/edition.jpg" alt="брошура видання Limited Edition" width="370">
+                            <img class="card-set__img" src="./images/edition.jpg" alt="брошура видання Limited Edition">
                             <div class="card-set__overlay">
                                 <p class="card-set__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
@@ -183,7 +218,7 @@
                 <li class="card-set__item">
                     <a href="" class="card-set__link">
                         <div class="card-set__wrap">
-                            <img class="card-set__img" src="./images/lab.jpg" alt="бірка лаб" width="370">
+                            <img class="card-set__img" src="./images/lab.jpg" alt="бірка лаб">
                             <div class="card-set__overlay">
                                 <p class="card-set__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
@@ -199,7 +234,7 @@
                 <li class="card-set__item">
                     <a href="" class="card-set__link">
                         <div class="card-set__wrap">
-                            <img class="card-set__img" src="./images/business.jpg" alt="Ноутбук з відкритим додатком" width="370">
+                            <img class="card-set__img" src="./images/business.jpg" alt="Ноутбук з відкритим додатком">
                             <div class="card-set__overlay">
                                 <p class="card-set__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
@@ -278,5 +313,6 @@
             </form>
         </div>
     </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
