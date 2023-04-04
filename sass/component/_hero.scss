@@ -13,7 +13,7 @@
 }
 .hero{
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, .4)),
-        url(../images/hero480.webp);
+        url(.../images/hero480.webp);
     background-size: cover;
     background-position: center;
     background-color: #C4C4C4;
@@ -22,14 +22,14 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, .4)),
-                url(../images/hero480@2x.webp);
+                url(.../images/hero480@2x.webp);
             background-size: cover;
             background-position: center;
             background-color: #C4C4C4;
         }
     @media screen and (min-width:768px) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, .4)),
-                url(../images/hero768.webp);
+                url(.../images/hero768.webp);
         background-size: cover;
         background-position: center;
         background-color: #C4C4C4;
@@ -38,7 +38,7 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, .4)),
-                url(../images/hero768@2x.webp);
+                url(.../images/hero768@2x.webp);
             background-size: cover;
             background-position: center;
             background-color: #C4C4C4;
@@ -46,7 +46,7 @@
     }
     @media screen and (min-width:1200px) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, .4)),
-            url(../images/hero1200.webp);
+            url(.../images/hero1200.webp);
         background-size: cover;
         background-position: center;
         background-color: #C4C4C4;
@@ -55,7 +55,7 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, .4)),
-                url(../images/hero1200@2x.webp);
+                url(.../images/hero1200@2x.webp);
             background-size: cover;
             background-position: center;
             background-color: #C4C4C4;
