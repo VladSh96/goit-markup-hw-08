@@ -15,8 +15,11 @@
     line-height: 16px;
     text-transform: uppercase;
     color: $white-color;
-    margin-top: 60px;
+   
     margin-bottom: 20px;
+    @media screen and (max-width:1199px) {
+        margin-top: 60px;
+    }
 }
 .signup__field{
     @media screen and (min-width:1200px) {

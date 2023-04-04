@@ -299,9 +299,17 @@ body {
   color: #757575;
 }
 
-.sections {
-  padding-bottom: 94px;
-  padding-top: 94px;
+@media screen and (max-width: 1199px) {
+  .sections {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sections {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .visually-hidden {
@@ -382,6 +390,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -444,19 +454,29 @@ body {
 .menu-toggle {
   padding: 0;
   margin: 0;
+  width: 40px;
+  height: 40px;
   border: none;
   background-color: #FFFFFF;
   margin-left: auto;
 }
 .menu-toggle__position {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 15px;
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
+}
+
+.menu__icon {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__icon:hover, .menu__icon:focus {
+  fill: #2196F3;
 }
 
 .menu-container {
@@ -465,8 +485,8 @@ body {
 @media screen and (max-width: 767px) {
   .menu-container {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 100vw;
     height: 100vh;
     overflow-y: scroll;
@@ -497,8 +517,18 @@ body {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 425px) {
+  .menu__link {
+    font-size: 36px;
+  }
 }
 .menu__link:hover, .menu__link:focus {
+  color: #2196F3;
+}
+.menu__link--active {
   color: #2196F3;
 }
 
@@ -516,12 +546,19 @@ body {
   letter-spacing: 0.02em;
   color: #2196F3;
 }
+@media screen and (max-width: 425px) {
+  .mobile-contact__tel {
+    font-size: 26px;
+  }
+}
 
 .mobile-contact__mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+  -webkit-transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-contact__mail:hover, .mobile-contact__mail:focus {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -550,7 +587,12 @@ body {
 }
 .menu__name:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 20px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 375px) {
+  .menu__name {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -670,25 +712,31 @@ body {
 
 .hero__section {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
-  height: 600px;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  .hero__section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero480.webp);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero480.webp);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./images/hero480.webp);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero480.webp);
   background-size: cover;
   background-position: center;
   background-color: #C4C4C4;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero480@2x.webp);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero480@2x.webp);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./images/hero480@2x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero480@2x.webp);
     background-size: cover;
     background-position: center;
     background-color: #C4C4C4;
@@ -696,8 +744,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero768.webp);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero768.webp);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./images/hero768.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero768.webp);
     background-size: cover;
     background-position: center;
     background-color: #C4C4C4;
@@ -705,8 +753,8 @@ body {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero768@2x.webp);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero768@2x.webp);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./images/hero768@2x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero768@2x.webp);
     background-size: cover;
     background-position: center;
     background-color: #C4C4C4;
@@ -714,8 +762,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero1200.webp);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero1200.webp);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./images/hero1200.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero1200.webp);
     background-size: cover;
     background-position: center;
     background-color: #C4C4C4;
@@ -723,8 +771,8 @@ body {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero1200@2x.webp);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero1200@2x.webp);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./images/hero1200@2x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero1200@2x.webp);
     background-size: cover;
     background-position: center;
     background-color: #C4C4C4;
@@ -742,6 +790,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (max-width: 350px) {
+  .hero__title {
+    font-size: 24px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -775,12 +828,25 @@ body {
   }
 }
 
-.feature__sections {
-  padding-top: 94px;
+@media screen and (max-width: 1199px) {
+  .feature__sections {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__sections {
+    padding-top: 94px;
+  }
 }
 
 .feature__item {
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .feature__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .feature__item {
@@ -1171,8 +1237,12 @@ body {
   line-height: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-top: 60px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .signup__title {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1279,6 +1349,11 @@ body {
   -webkit-transform: scale(0.9) translate(-50%, -50%);
           transform: scale(0.9) translate(-50%, -50%);
 }
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -1380,6 +1455,13 @@ body {
   font-size: 12px;
   line-height: 1.16;
 }
+@media screen and (max-width: 440px) {
+  .modal__checkbox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal__checkbox {
     font-size: 14px;
@@ -1409,6 +1491,11 @@ body {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+}
+@media screen and (max-width: 440px) {
+  .modal__link {
+    font-size: 10px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal__link {
