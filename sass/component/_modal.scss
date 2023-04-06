@@ -37,7 +37,11 @@
         transform: scale(0.9) translate(-50%, -50%);
     }
     @media screen and (max-width:450px) {
-        width: 100%;
+        width: 100vw;
+        max-height: 100vh;
+    }
+    @media screen and (max-height:600px) {
+        max-height: 90vh;
     }
     @media screen and (min-width:1200px) {
         width: 528px;
@@ -81,6 +85,9 @@
     @media screen and (min-width:1200px) {
         font-size: 20px;
         line-height: 1.15px;
+    }
+    @media screen and (max-height:600px) {
+        font-size: 16px;
     }
 }
 
@@ -220,6 +227,9 @@
 
     @extend %btn-primary;
     @extend %btn;
+    @media screen and (max-height:600px) {
+        margin-top: 5px;
+    }
 }
 
 
