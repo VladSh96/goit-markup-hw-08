@@ -41,7 +41,7 @@
         max-height: 100vh;
     }
     @media screen and (max-height:600px) {
-        max-height: 90vh;
+        max-height: 100vh;
     }
     @media screen and (min-width:1200px) {
         width: 528px;
@@ -227,7 +227,7 @@
 
     @extend %btn-primary;
     @extend %btn;
-    @media screen and (max-height:600px) {
+    @media screen and (max-height:600px) and (max-width:425px) {
         margin-top: 5px;
     }
 }
